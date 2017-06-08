@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Cures</title>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css"
+          th:href="@{bootstrap/css/bootstrap.min.css}"/>
+</head>
+<body>
+<header th:replace="fragments/parts::menu">
+</header>
+<main>
+    <div class="container">
+        <br/>
+        <div class="h1">All Viruses</div>
+        <br/>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Magnitude</th>
+                <th>Released On</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="virus : ${viruses}" th:object="${virus}">
+                <td th:text="*{id}">id</td>
+                <td th:text="*{name}">name</td>
+                <td th:text="*{magnitude}">magnitude</td>
+                <td th:text="*{#dates.format(releasedOn,'dd-MMM-yyyy')}">date</td>
+                <td>
+                    <a class="btn btn-secondary" th:href="|/viruses/delete/*{id}|">Delete</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+<script th:src="@{jquery/jquery.min.js}"></script>
+<script th:src="@{bootstrap/js/bootstrap.min.js}"></script>
+</body>
+</html>

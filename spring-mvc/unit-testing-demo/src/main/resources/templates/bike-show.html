@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Bike Shop</title>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css"
+          th:href="@{/bootstrap/css/bootstrap.min.css}"/>
+</head>
+<body>
+<header th:replace="fragments/parts::menu">
+</header>
+<main>
+    <br/>
+    <div class="container">
+        <div class="card " th:object="${bike}">
+            <div class="card-block">
+                <h4 class="card-title" th:text="${bike.model}">Card title</h4>
+                <p class="card-text" th:text="|Id: ${bike.id}|">This is a wider card with supporting text below
+                    as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted" th:text="|Gears: ${bike.gears}|">Last updated 3 mins ago</small>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted" th:text="|Is Sold: ${bike.isSold()}|">Last updated 3 mins ago</small>
+            </div>
+        </div>
+        <br/>
+        <a class="btn btn-primary" href="/bikes">Go Back</a>
+    </div>
+</main>
+<script th:src="@{/jquery/jquery.min.js}"></script>
+<script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+</body>
+</html>

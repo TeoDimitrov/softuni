@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Bike Shop</title>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css"
+          th:href="@{bootstrap/css/bootstrap.min.css}"/>
+</head>
+<body>
+<header th:replace="fragments/parts::menu">
+</header>
+<main>
+    <br/>
+    <div class="container">
+        <div class="card-deck">
+            <div th:each="bike,iter : ${bikes}">
+                <div class="card " style="width: 16em">
+                    <div class="card-block">
+                        <h4 class="card-title" th:text="${bike.model}">Card title</h4>
+                        <p class="card-text" th:text="|Id: ${bike.id}|">This is a wider card with supporting text below
+                            as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted" th:text="|Gears: ${bike.gears}|">Last updated 3 mins ago</small>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted" th:text="|Is Sold: ${bike.isSold()}|">Last updated 3 mins ago</small>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted"><a th:href="|/bikes/show/${bike.id}|">Check it out!</a></small>
+                    </div>
+                </div>
+                <br th:style="${iter.index} % 3 == 1 ? 'display:none'"/>
+            </div>
+        </div>
+        <br/>
+        <nav aria-label="Page navigation example" th:if="!${#lists.isEmpty(bikes)}">
+            <ul class="pagination">
+                <li class="page-item" th:classappend="!${bikes.hasPrevious()}? 'disabled'"><a class="page-link" href="#" th:href="${bikes.hasPrevious()} ? '/bikes?page=' + ${bikes.previousPageable().getPageNumber()}" >Previous</a></li>
+                <li class="page-item" th:each="i : ${#numbers.sequence(0, bikes.getTotalPages() - 1)}">
+                    <a class="page-link" href="#" th:href="|/bikes?page=${i}|" th:text="${i + 1}">1</a>
+                </li>
+                <li class="page-item" th:classappend="!${bikes.hasNext()}? 'disabled'"><a class="page-link" href="#" th:href="${bikes.hasNext()} ? '/bikes?page=' + ${bikes.nextPageable().getPageNumber()}">Next</a></li>
+            </ul>
+        </nav>
+    </div>
+</main>
+<script th:src="@{jquery/jquery.min.js}"></script>
+<script th:src="@{bootstrap/js/bootstrap.min.js}"></script>
+</body>
+</html>

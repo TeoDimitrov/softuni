@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="categories_array">
+        <item>Work</item>
+        <item>Girlfriend</item>
+        <item>University</item>
+    </string-array>
+</resources>

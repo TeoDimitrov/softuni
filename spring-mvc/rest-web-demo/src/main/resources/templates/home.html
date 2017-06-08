@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css"
+          th:href="@{bootstrap/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css"
+          th:href="@{css/home.css}"/>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+        <button class="navbar-toggler navbar-toggler-right hidden-lg-up" type="button" data-toggle="collapse"
+                data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">To Do List</a>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <form class="form-inline mt-2 mt-md-0">
+                <input id="searchBox" class="form-control mr-sm-2" placeholder="Search" type="text"/>
+                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
+                <ul id="categoriesUnorderedList" class="nav nav-pills flex-column red">
+                </ul>
+            </nav>
+        </div>
+        <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
+            <h1>My To-Do List</h1>
+            <a id="addTaskButton" href="#" class="text-gray-dark">
+                + Add Task
+            </a>
+            <div id="addItemsInputs">
+                <div class="row">
+                    <input id="newInputName" class="form-control col-sm-9" placeholder="e.g. Read the news"/>
+                    <input id="newInputDate" type="date" class="form-control col-sm-3" placeholder="e.g. 2017/02/15 "/>
+                </div>
+                <div class="row">
+                    <a id="btnSave" href="#" class="btn btn-outline-secondary">Save</a>
+                    <a id="btnCancel" href="#" class="btn btn-outline-secondary">Cancel</a>
+                </div>
+            </div>
+            <br/>
+            <div id="toDoItemsList">
+
+            </div>
+        </main>
+    </div>
+</main>
+</body>
+<script th:src="@{jquery/jquery.min.js}"></script>
+<script th:src="@{bootstrap/js/bootstrap.min.js}"></script>
+<script type="text/javascript">
+
+    //Execute when page is open and HTML is ready
+    $(function () {
+        loadJSONCategories();
+        hideAddItemInputs();
+        $('#btnSave').click(saveItem);
+        $('#btnCancel').click(hideAddItemInputs);
+        $('#addTaskButton').click(showAddItemInputs);
+        $('#searchBox').on('input', search);
+    });
+
+    //Show Add Items
+    function showAddItemInputs() {
+        $('#addItemsInputs').show();
+    }
+
+    //Hide Add Items
+    function hideAddItemInputs() {
+        $('#addItemsInputs').hide();
+    }
+
+    //Save the item
+    function saveItem() {
+        var toDoItem = {};
+        toDoItem.name = $('#newInputName').val();
+        toDoItem.deadline = $('#newInputDate').val();
+        toDoItem.enabled = true;
+        toDoItem.categoryName = $('#categoriesUnorderedList li .active').text();
+        $.ajax({
+            type: 'POST',
+            url: '/items',
+            data: JSON.stringify(toDoItem),
+            dataType: 'json',
+            contentType: 'application/json',
+            success: function (toDoItem) {
+                addToDoItemDOM(toDoItem);
+            }
+        });
+    }
+
+    function formatDate(dateInNumber) {
+        var date = new Date(dateInNumber);
+        var day = date.getDate();
+        var month = date.getMonth() + 1;
+        var year = date.getFullYear();
+        return year + '/' + month + '/' + day;
+    }
+
+    //Add Items to DOM
+    function addToDoItemDOM(toDoItem) {
+        var id = toDoItem.id;
+        var name = toDoItem.name;
+        var deadline = formatDate(toDoItem.deadline);
+        $('#toDoItemsList').append(
+            $('<div></div>')
+                .addClass('row')
+                .attr('itemid', id)
+                .append(
+                    $('<input/>')
+                        .addClass('updateNameClass form-control col-sm-9')
+                        .val(name))
+                .append(
+                    $('<input/>')
+                        .addClass('updateDeadlineClass form-control col-sm-3')
+                        .val(deadline))
+                .on('change', function () {
+                    var currentDOMItem = $(this);
+                    var toDoItem = {};
+                    toDoItem.id = currentDOMItem.attr('itemid');
+                    toDoItem.name = currentDOMItem.find('.updateNameClass').val();
+                    toDoItem.deadline = currentDOMItem.find('.updateDeadlineClass').val();
+                    updateItem(toDoItem);
+                })
+                .on('keyup', function (e) {
+                    var currentDOMItem = $(this);
+                    if (e.which == 27) {
+                        var itemId = currentDOMItem.attr('itemid');
+                        //Delete DOM Item
+                        currentDOMItem.remove();
+                        //Delete in MySQL
+                        deleteItem(itemId);
+                    }
+                })
+        );
+
+        hideAddItemInputs();
+    }
+
+    //Get JSON Data
+    function loadJSONCategories() {
+        $.ajax({
+            type: 'GET',
+            url: '/categories',
+            data: 'json',
+            success: function (categories) {
+                loadDOMCategories(categories);
+            }
+        });
+    }
+
+    //Create Category DOM
+    function loadDOMCategories(categories) {
+        $.each(categories, function (i, category) {
+            var categoryName = category.name;
+            var categoryId = category.id;
+            $('#categoriesUnorderedList')
+                .append($('<li></li>')
+                    .addClass('nav-item')
+                    .append($('<a></a>')
+                        .addClass('nav-link')
+                        .attr('href', '#')
+                        .attr('categoryid', categoryId)
+                        .text(categoryName)
+                        .on('click', function () {
+                            $('#categoriesUnorderedList li .active').removeClass('active');
+                            var currentCategory = $(this);
+                            currentCategory.addClass('active');
+                            $('#toDoItemsList').empty();
+                            loadAllToDoItems();
+                        })
+                    )
+                )
+        });
+
+        $('#categoriesUnorderedList li:first-child a').click();
+    }
+
+    function loadAllToDoItems() {
+        var categoryId = $('#categoriesUnorderedList li .active').attr('categoryid');
+        $.ajax({
+            type: 'GET',
+            url: '/items/category/' + categoryId,
+            data: 'json',
+            success: function (items) {
+                $.each(items, function (i, toDoItem) {
+                    addToDoItemDOM(toDoItem);
+                });
+            }
+        });
+    }
+
+    function updateItem(item) {
+        var itemId = item.id;
+        $.ajax({
+            type: 'PUT',
+            url: '/items/' + itemId,
+            data: JSON.stringify(item),
+            contentType: 'application/json'
+        })
+    }
+
+    function deleteItem(itemId) {
+        $.ajax({
+            type: 'DELETE',
+            url: '/items/delete/' + itemId
+        })
+    }
+
+    function search() {
+        var searchWord = $('#searchBox').val();
+        var categoryId = $('#categoriesUnorderedList li .active').attr('categoryid');
+        $.ajax({
+            type: 'GET',
+            url: '/items/search',
+            data: {
+                searchWord: searchWord,
+                categoryId: categoryId
+            },
+            contentType: 'application/json',
+            success: function (items) {
+                $('#toDoItemsList').empty();
+                $.each(items, function (i, toDoItem) {
+                    addToDoItemDOM(toDoItem);
+                });
+            }
+        });
+    }
+
+</script>
+</html>

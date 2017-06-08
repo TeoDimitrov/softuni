@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<photographers>
+    <photograph name="Jamie Mauger" primary-camera="Canon 5D Mk II">
+        <lenses>
+            <lens focalLength="77mm" maxAperture="f2.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Stephnie Arciniega" primary-camera="Sony A35">
+        <lenses>
+            <lens focalLength="50mm" maxAperture="f4.0"/>
+            <lens focalLength="28mm" maxAperture="f1.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Melodee Shepler" primary-camera="Pentax K110D">
+        <lenses>
+            <lens focalLength="20mm" maxAperture="f2.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Freeda Casimir" primary-camera="Nikon D800">
+        <lenses>
+            <lens focalLength="100mm" maxAperture="f1.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Dante Ketter" primary-camera="Pentax K-50">
+        <lenses>
+            <lens focalLength="28mm" maxAperture="f4.0"/>
+        </lenses>
+    </photograph>
+    <photograph name="Lajuana Mcclean" primary-camera="Fuji XT10">
+        <lenses>
+            <lens focalLength="11mm" maxAperture="f3.5"/>
+            <lens focalLength="30mm" maxAperture="f2.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Jenna Baize" primary-camera="Fuji XQ1">
+        <lenses>
+            <lens focalLength="135mm" maxAperture="f2.8"/>
+            <lens focalLength="8mm" maxAperture="f3.5"/>
+        </lenses>
+    </photograph>
+    <photograph name="Carolee Kuder" primary-camera="Pentax K-3">
+        <lenses>
+            <lens focalLength="8mm" maxAperture="f2.2"/>
+            <lens focalLength="40mm" maxAperture="f1.4"/>
+            <lens focalLength="600mm" maxAperture="f4.0"/>
+        </lenses>
+    </photograph>
+    <photograph name="Mckenzie Monteiro" primary-camera="Nikon D300">
+        <lenses>
+            <lens focalLength="135mm" maxAperture="f2.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Freeman Dalby" primary-camera="Canon 5D Mk II">
+        <lenses>
+            <lens focalLength="135mm" maxAperture="f2.8"/>
+            <lens focalLength="26mm" maxAperture="f2.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Rosalie Ragsdale" primary-camera="Pentax K-30">
+        <lenses>
+            <lens focalLength="13mm" maxAperture="f2.0"/>
+            <lens focalLength="15mm" maxAperture="f5.6"/>
+        </lenses>
+    </photograph>
+    <photograph name="Beula Zendejas" primary-camera="Nikon D7100">
+        <lenses>
+            <lens focalLength="18mm" maxAperture="f4.0"/>
+            <lens focalLength="135mm" maxAperture="f2.8"/>
+            <lens focalLength="40mm" maxAperture="f1.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Ralph Rizer" primary-camera="Nikon D7200">
+        <lenses>
+            <lens focalLength="10mm" maxAperture="f1.2"/>
+            <lens focalLength="200mm" maxAperture="f4.0"/>
+        </lenses>
+    </photograph>
+    <photograph name="Dani Vanness" primary-camera="Fuji XQ1">
+        <lenses>
+            <lens focalLength="11mm" maxAperture="f2.0"/>
+            <lens focalLength="10mm" maxAperture="f3.5"/>
+            <lens focalLength="10mm" maxAperture="f4.0"/>
+            <lens focalLength="8mm" maxAperture="f2.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Azucena Stclaire" primary-camera="Pentax K-7">
+        <lenses>
+            <lens focalLength="30mm" maxAperture="f2.4"/>
+            <lens focalLength="135mm" maxAperture="f2.8"/>
+            <lens focalLength="14mm" maxAperture="f2.0"/>
+        </lenses>
+    </photograph>
+    <photograph name="Tu Aslinger" primary-camera="Canon 60D">
+        <lenses>
+            <lens focalLength="28mm" maxAperture="f2.8"/>
+            <lens focalLength="18mm" maxAperture="f2.8"/>
+            <lens focalLength="35mm" maxAperture="f2.0"/>
+            <lens focalLength="135mm" maxAperture="f4.0"/>
+        </lenses>
+    </photograph>
+    <photograph name="Danny Nethery" primary-camera="Fuji XMount">
+        <lenses>
+            <lens focalLength="135mm" maxAperture="f2.8"/>
+            <lens focalLength="50mm" maxAperture="f2.8"/>
+            <lens focalLength="20mm" maxAperture="f2.0"/>
+            <lens focalLength="28mm" maxAperture="f1.8"/>
+            <lens focalLength="350mm" maxAperture="f4.0"/>
+            <lens focalLength="29mm" maxAperture="f2.0"/>
+        </lenses>
+    </photograph>
+    <photograph name="Wilfredo Finnegan" primary-camera="Pentax K-70">
+        <lenses>
+            <lens focalLength="135mm" maxAperture="f2.8"/>
+            <lens focalLength="200mm" maxAperture="f2.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Allyson Gayman" primary-camera="Fuji X100">
+        <lenses>
+            <lens focalLength="30mm" maxAperture="f2.4"/>
+            <lens focalLength="85mm" maxAperture="f1.4"/>
+            <lens focalLength="30mm" maxAperture="f2.8"/>
+            <lens focalLength="24mm" maxAperture="f2.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Betsey Oconner" primary-camera="Sony A100">
+        <lenses>
+            <lens focalLength="26mm" maxAperture="f4.0"/>
+            <lens focalLength="135mm" maxAperture="f2.8"/>
+            <lens focalLength="135mm" maxAperture="f2.8"/>
+            <lens focalLength="40mm" maxAperture="f1.8"/>
+            <lens focalLength="77mm" maxAperture="f4.0"/>
+        </lenses>
+    </photograph>
+    <photograph name="Antonetta Gano" primary-camera="Fuji XE2s">
+        <lenses>
+            <lens focalLength="14mm" maxAperture="f4.0"/>
+        </lenses>
+    </photograph>
+    <photograph name="Cheri Regina" primary-camera="Fuji X100">
+        <lenses>
+            <lens focalLength="24mm" maxAperture="f4.0"/>
+            <lens focalLength="40mm" maxAperture="f1.8"/>
+            <lens focalLength="18mm" maxAperture="f2.8"/>
+            <lens focalLength="16mm" maxAperture="f4.0"/>
+            <lens focalLength="16mm" maxAperture="f2.4"/>
+        </lenses>
+    </photograph>
+    <photograph name="Ola Straw" primary-camera="Sony A560">
+        <lenses>
+            <lens focalLength="200mm" maxAperture="f2.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Tashia Lunsford" primary-camera="Canon 550D">
+        <lenses>
+            <lens focalLength="24mm" maxAperture="f1.8"/>
+            <lens focalLength="15mm" maxAperture="f4.0"/>
+            <lens focalLength="125mm" maxAperture="f1.4"/>
+            <lens focalLength="15mm" maxAperture="f2.8"/>
+            <lens focalLength="30mm" maxAperture="f2.8"/>
+            <lens focalLength="70mm" maxAperture="f4.0"/>
+            <lens focalLength="24mm" maxAperture="f1.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Dinah Mckenney" primary-camera="Sony A300">
+        <lenses>
+            <lens focalLength="1200mm" maxAperture="f2.8"/>
+            <lens focalLength="12mm" maxAperture="f4.0"/>
+            <lens focalLength="14mm" maxAperture="f2.0"/>
+            <lens focalLength="28mm" maxAperture="f2.8"/>
+            <lens focalLength="24mm" maxAperture="f2.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Adria Mcquire" primary-camera="Pentax K-x">
+        <lenses>
+            <lens focalLength="200mm" maxAperture="f5.6"/>
+            <lens focalLength="24mm" maxAperture="f3.5"/>
+            <lens focalLength="10mm" maxAperture="f3.5"/>
+        </lenses>
+    </photograph>
+    <photograph name="Romona Griffin" primary-camera="Nikon D500">
+        <lenses>
+            <lens focalLength="28mm" maxAperture="f2.8"/>
+            <lens focalLength="135mm" maxAperture="f4.0"/>
+            <lens focalLength="24mm" maxAperture="f1.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Leontine Breitenbach" primary-camera="Fuji X100S">
+        <lenses>
+            <lens focalLength="9mm" maxAperture="f2.8"/>
+            <lens focalLength="14mm" maxAperture="f2.0"/>
+            <lens focalLength="20mm" maxAperture="f2.0"/>
+            <lens focalLength="70mm" maxAperture="f4.0"/>
+            <lens focalLength="27mm" maxAperture="f2.8"/>
+            <lens focalLength="40mm" maxAperture="f4.0"/>
+        </lenses>
+    </photograph>
+    <photograph name="Joan Fife" primary-camera="Nikon D750">
+        <lenses>
+            <lens focalLength="28mm" maxAperture="f4.0"/>
+            <lens focalLength="24mm" maxAperture="f1.8"/>
+            <lens focalLength="1200mm" maxAperture="f2.4"/>
+            <lens focalLength="1000mm" maxAperture="f2.4"/>
+            <lens focalLength="1200mm" maxAperture="f8.0"/>
+            <lens focalLength="14mm" maxAperture="f2.0"/>
+        </lenses>
+    </photograph>
+    <photograph name="Denisha Gatton" primary-camera="Sony A900">
+        <lenses>
+            <lens focalLength="24mm" maxAperture="f1.8"/>
+            <lens focalLength="24mm" maxAperture="f3.5"/>
+            <lens focalLength="85mm" maxAperture="f2.4"/>
+            <lens focalLength="25mm" maxAperture="f2.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Luciano Brisker" primary-camera="Canon 7D Mk II">
+        <lenses>
+            <lens focalLength="10mm" maxAperture="f3.5"/>
+            <lens focalLength="40mm" maxAperture="f1.8"/>
+            <lens focalLength="135mm" maxAperture="f2.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Valery Pickens" primary-camera="Fuji XT2">
+        <lenses>
+            <lens focalLength="24mm" maxAperture="f1.8"/>
+            <lens focalLength="135mm" maxAperture="f2.4"/>
+            <lens focalLength="15mm" maxAperture="f1.4"/>
+            <lens focalLength="135mm" maxAperture="f2.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Nam Dinkins" primary-camera="Fuji XF1">
+        <lenses>
+            <lens focalLength="500mm" maxAperture="f1.4"/>
+            <lens focalLength="135mm" maxAperture="f2.8"/>
+            <lens focalLength="28mm" maxAperture="f2.8"/>
+            <lens focalLength="28mm" maxAperture="f2.8"/>
+            <lens focalLength="10mm" maxAperture="f1.4"/>
+            <lens focalLength="35mm" maxAperture="f4.0"/>
+            <lens focalLength="24mm" maxAperture="f1.8"/>
+            <lens focalLength="135mm" maxAperture="f2.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Cristopher Brinkerhoff" primary-camera="Fuji XMount">
+        <lenses>
+            <lens focalLength="15mm" maxAperture="f2.4"/>
+            <lens focalLength="70mm" maxAperture="f2.8"/>
+            <lens focalLength="40mm" maxAperture="f2.4"/>
+            <lens focalLength="600mm" maxAperture="f1.4"/>
+            <lens focalLength="24mm" maxAperture="f1.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Kirstin Whidbee" primary-camera="Fuji XMount">
+        <lenses>
+            <lens focalLength="300mm" maxAperture="f1.4"/>
+            <lens focalLength="200mm" maxAperture="f4.0"/>
+            <lens focalLength="24mm" maxAperture="f1.8"/>
+            <lens focalLength="8mm" maxAperture="f2.0"/>
+            <lens focalLength="100mm" maxAperture="f1.2"/>
+            <lens focalLength="30mm" maxAperture="f2.8"/>
+            <lens focalLength="30mm" maxAperture="f2.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Wendy Ellwood" primary-camera="Nikon D3X">
+        <lenses>
+            <lens focalLength="14mm" maxAperture="f2.0"/>
+            <lens focalLength="14mm" maxAperture="f2.0"/>
+            <lens focalLength="24mm" maxAperture="f1.8"/>
+            <lens focalLength="200mm" maxAperture="f2.8"/>
+            <lens focalLength="24mm" maxAperture="f2.8"/>
+            <lens focalLength="40mm" maxAperture="f4.0"/>
+        </lenses>
+    </photograph>
+    <photograph name="Sharee Rothchild" primary-camera="Nikon D800">
+        <lenses>
+            <lens focalLength="2000mm" maxAperture="f5.6"/>
+            <lens focalLength="135mm" maxAperture="f2.8"/>
+            <lens focalLength="24mm" maxAperture="f1.8"/>
+            <lens focalLength="135mm" maxAperture="f2.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Shon Bjerke" primary-camera="Nikon D4S">
+        <lenses>
+            <lens focalLength="24mm" maxAperture="f1.8"/>
+            <lens focalLength="20mm" maxAperture="f2.0"/>
+            <lens focalLength="14mm" maxAperture="f2.0"/>
+            <lens focalLength="24mm" maxAperture="f1.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="China Horsey" primary-camera="Canon 600D">
+        <lenses>
+            <lens focalLength="20mm" maxAperture="f2.0"/>
+            <lens focalLength="85mm" maxAperture="f4.0"/>
+            <lens focalLength="70mm" maxAperture="f1.4"/>
+            <lens focalLength="45mm" maxAperture="f2.0"/>
+            <lens focalLength="135mm" maxAperture="f2.8"/>
+            <lens focalLength="14mm" maxAperture="f2.0"/>
+        </lenses>
+    </photograph>
+    <photograph name="Shannon Clendenin" primary-camera="Nikon D40">
+        <lenses>
+            <lens focalLength="400mm" maxAperture="f4.0"/>
+            <lens focalLength="200mm" maxAperture="f2.8"/>
+            <lens focalLength="28mm" maxAperture="f4.0"/>
+            <lens focalLength="85mm" maxAperture="f1.4"/>
+            <lens focalLength="24mm" maxAperture="f1.8"/>
+            <lens focalLength="15mm" maxAperture="f1.4"/>
+            <lens focalLength="40mm" maxAperture="f4.0"/>
+            <lens focalLength="15mm" maxAperture="f1.8"/>
+            <lens focalLength="40mm" maxAperture="f2.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Federico Arceo" primary-camera="Sony A300">
+        <lenses>
+            <lens focalLength="300mm" maxAperture="f4.0"/>
+            <lens focalLength="50mm" maxAperture="f4.0"/>
+            <lens focalLength="30mm" maxAperture="f1.8"/>
+            <lens focalLength="20mm" maxAperture="f2.8"/>
+            <lens focalLength="200mm" maxAperture="f2.8"/>
+            <lens focalLength="20mm" maxAperture="f2.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Heide Plemmons" primary-camera="Sony A290">
+        <lenses>
+            <lens focalLength="24mm" maxAperture="f1.8"/>
+            <lens focalLength="45mm" maxAperture="f4.0"/>
+            <lens focalLength="15mm" maxAperture="f1.8"/>
+            <lens focalLength="70mm" maxAperture="f2.8"/>
+            <lens focalLength="200mm" maxAperture="f2.8"/>
+            <lens focalLength="11mm" maxAperture="f4.0"/>
+            <lens focalLength="16mm" maxAperture="f2.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Leota Eastep" primary-camera="Nikon D300">
+        <lenses>
+            <lens focalLength="35mm" maxAperture="f2.4"/>
+            <lens focalLength="18mm" maxAperture="f3.5"/>
+            <lens focalLength="15mm" maxAperture="f2.0"/>
+            <lens focalLength="40mm" maxAperture="f2.0"/>
+            <lens focalLength="18mm" maxAperture="f4.0"/>
+            <lens focalLength="28mm" maxAperture="f1.8"/>
+            <lens focalLength="8mm" maxAperture="f1.0"/>
+            <lens focalLength="14mm" maxAperture="f2.0"/>
+            <lens focalLength="20mm" maxAperture="f2.0"/>
+        </lenses>
+    </photograph>
+    <photograph name="Romona Kumm" primary-camera="Nikon D7100">
+        <lenses>
+            <lens focalLength="24mm" maxAperture="f1.8"/>
+            <lens focalLength="35mm" maxAperture="f4.0"/>
+            <lens focalLength="25mm" maxAperture="f4.0"/>
+            <lens focalLength="24mm" maxAperture="f1.8"/>
+            <lens focalLength="400mm" maxAperture="f4.0"/>
+            <lens focalLength="30mm" maxAperture="f2.0"/>
+            <lens focalLength="135mm" maxAperture="f2.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Beverley Kirby" primary-camera="Fuji X70">
+        <lenses>
+            <lens focalLength="400mm" maxAperture="f1.4"/>
+            <lens focalLength="135mm" maxAperture="f2.8"/>
+            <lens focalLength="28mm" maxAperture="f1.8"/>
+            <lens focalLength="200mm" maxAperture="f2.8"/>
+            <lens focalLength="30mm" maxAperture="f1.8"/>
+            <lens focalLength="135mm" maxAperture="f1.4"/>
+            <lens focalLength="55mm" maxAperture="f4.0"/>
+            <lens focalLength="135mm" maxAperture="f2.8"/>
+            <lens focalLength="30mm" maxAperture="f2.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Margarita Sollers" primary-camera="Nikon D40">
+        <lenses>
+            <lens focalLength="14mm" maxAperture="f4.0"/>
+            <lens focalLength="200mm" maxAperture="f2.8"/>
+            <lens focalLength="10mm" maxAperture="f3.5"/>
+            <lens focalLength="16mm" maxAperture="f2.0"/>
+            <lens focalLength="135mm" maxAperture="f2.8"/>
+            <lens focalLength="14mm" maxAperture="f2.8"/>
+            <lens focalLength="15mm" maxAperture="f2.8"/>
+            <lens focalLength="28mm" maxAperture="f2.8"/>
+            <lens focalLength="17mm" maxAperture="f3.5"/>
+        </lenses>
+    </photograph>
+    <photograph name="Benjamin Lindblad" primary-camera="Nikon D800">
+        <lenses>
+            <lens focalLength="30mm" maxAperture="f2.8"/>
+            <lens focalLength="20mm" maxAperture="f2.8"/>
+            <lens focalLength="10mm" maxAperture="f1.2"/>
+            <lens focalLength="200mm" maxAperture="f2.8"/>
+            <lens focalLength="135mm" maxAperture="f2.8"/>
+            <lens focalLength="200mm" maxAperture="f2.8"/>
+            <lens focalLength="300mm" maxAperture="f5.6"/>
+            <lens focalLength="55mm" maxAperture="f2.8"/>
+            <lens focalLength="200mm" maxAperture="f2.8"/>
+        </lenses>
+    </photograph>
+    <photograph name="Deetta Beausoleil" primary-camera="Fuji X70">
+        <lenses>
+            <lens focalLength="15mm" maxAperture="f2.8"/>
+            <lens focalLength="200mm" maxAperture="f2.8"/>
+            <lens focalLength="12mm" maxAperture="f3.5"/>
+            <lens focalLength="350mm" maxAperture="f5.6"/>
+            <lens focalLength="14mm" maxAperture="f2.0"/>
+            <lens focalLength="77mm" maxAperture="f4.0"/>
+            <lens focalLength="200mm" maxAperture="f2.8"/>
+            <lens focalLength="16mm" maxAperture="f2.4"/>
+            <lens focalLength="16mm" maxAperture="f2.0"/>
+        </lenses>
+    </photograph>
+    <photograph name="Helena Cahn" primary-camera="Fuji X20">
+        <lenses>
+            <lens focalLength="200mm" maxAperture="f2.8"/>
+            <lens focalLength="8mm" maxAperture="f1.2"/>
+            <lens focalLength="10mm" maxAperture="f3.5"/>
+            <lens focalLength="14mm" maxAperture="f2.0"/>
+            <lens focalLength="85mm" maxAperture="f4.0"/>
+            <lens focalLength="10mm" maxAperture="f3.5"/>
+            <lens focalLength="8mm" maxAperture="f1.4"/>
+            <lens focalLength="135mm" maxAperture="f2.8"/>
+            <lens focalLength="135mm" maxAperture="f1.4"/>
+            <lens focalLength="350mm" maxAperture="f1.4"/>
+        </lenses>
+    </photograph>
+</photographers>

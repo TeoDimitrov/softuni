@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Viruses</title>
+        <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css" th:href="@{/bootstrap/css/bootstrap.min.css}"/>
+    </head>
+    <body>
+    <header th:replace="fragments/parts::menu">
+    </header>
+    <main>
+        <br/>
+        <div class="container">
+            <div class="h1">Spread a new Virus!</div>
+            <br/>
+            <form th:replace="fragments/forms::add-form"></form>
+        </div>
+        <br/>
+    </main>
+    <script th:src="@{/jquery/jquery.min.js}"></script>
+    <script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+    </body>
+</html>
